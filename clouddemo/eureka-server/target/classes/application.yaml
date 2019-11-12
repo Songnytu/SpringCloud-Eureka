@@ -1,0 +1,11 @@
+server:
+  port: 10086
+spring:
+  application:
+    name: eureka-server  #Eureka的名称
+eureka:
+  client:
+    service-url:
+      defaultZone: http://127.0.0.1:10086/eureka #告诉它注册的地址key-value,默认是localhost:8761
+    # register-with-eureka: false
+    # fetch-registry: false

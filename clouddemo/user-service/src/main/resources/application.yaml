@@ -1,0 +1,16 @@
+server:
+  port: 8081
+spring:
+  application:
+    name: user-service
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/springboottest?characterEncoding=utf8
+    username: root
+    password: 456456
+mybatis:
+  type-aliases-package: com.tutu.user.pojo  # 实体类包路径
+eureka:
+  client:
+    service-url:
+      defaultZone: http://127.0.0.1:10086/eureka
